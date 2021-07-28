@@ -44,7 +44,7 @@ export default class CreateHealth extends Component {
 
        
 
-        axios.post('https://health-info-app.herokuapp.com/health', health )
+        axios.post('https://health-info-app.herokuapp.com/health/add/', health )
             .then(res => window.location = "/")
             .catch(err => console.log('Error :'+ err));
     }
